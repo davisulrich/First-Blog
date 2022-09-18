@@ -15,6 +15,18 @@ export default function BlogPost({
           <img src={coverPhoto.url} alt="cover photo" />
         </div>
       </Link>
+      <div className={styles.text}>
+        <h2>{title}</h2>
+        <div className={styles.details}>
+          <div className={styles.author}>
+            <img src={author.avatar.url}></img>
+            <h3>{author.name}</h3>
+          </div>
+          <div className={styles.date}>
+            <h3>{datePublished}</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
