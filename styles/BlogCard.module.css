@@ -16,7 +16,8 @@
   height: 20vh;
 }
 .imgContainer img {
-  width: 20%;
+  height: 20vh;
+  width: 100%;
 }
 .card img:hover {
   opacity: 0.8;

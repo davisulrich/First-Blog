@@ -1,4 +1,25 @@
-.container {
+.title h1 {
+  color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+  }
+}
+
+/* previous css */
+/* .container {
   padding: 0 2rem;
 }
 
@@ -126,4 +147,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */
