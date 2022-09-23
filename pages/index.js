@@ -1,4 +1,5 @@
 // npm run dev to start up
+// https://www.youtube.com/watch?v=Dc7LAgqy1_E
 
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -38,7 +39,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-    revalidate: 10,
+    revalidate: 30,
   };
 }
 
@@ -59,7 +60,7 @@ export default function Home({ posts }) {
             coverPhoto={post.coverPhoto}
             key={post.id}
             datePublished={post.datePublished}
-            slug={posts.slug}
+            slug={post.slug}
           />
         ))}
       </main>

@@ -62,14 +62,14 @@ export default function BlogPost({ post }) {
   return (
     <main className={styles.blog}>
       <img src={post.coverPhoto.url} className={styles.cover} />
-      <div className={styles.title}>
+      <div className={styles.authtext}>
         <img src={post.author.avatar.url} />
         <div className={styles.authtext}>
           <h6>By {post.author.name}</h6>
           <h6 className={styles.date}>{post.datePublished}</h6>
         </div>
       </div>
-      <h2>{post.title}</h2>
+      <h2 className={styles.title}>{post.title}</h2>
       <div
         className={styles.content}
         dangerouslySetInnerHTML={{ __html: post.content.html }}
