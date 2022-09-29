@@ -1,11 +1,16 @@
+.blog {
+  width: 100%;
+  /* background-color: aqua; */
+}
 .title {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.title h2 {
+/* .title h2 {
   padding-top: 1rem;
-  padding-bottom: 2rem;
-}
+  padding-bottom: 15rem;
+} */
 
 .authdetails {
   display: flex;

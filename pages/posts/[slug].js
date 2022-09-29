@@ -62,7 +62,7 @@ export default function BlogPost({ post }) {
   return (
     <main className={styles.blog}>
       <img src={post.coverPhoto.url} className={styles.cover} />
-      <div className={styles.authtext}>
+      <div className={styles.authdetails}>
         <img src={post.author.avatar.url} />
         <div className={styles.authtext}>
           <h6>By {post.author.name}</h6>
