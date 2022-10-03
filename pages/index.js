@@ -70,7 +70,7 @@ export default function Home({ posts }) {
             <a href="davisontheinternet.com/about.html">About</a>
           </li>
           <li>
-            <a href="/">Blog</a>
+            <a href="#">Blog</a>
           </li>
           <li>
             <a href="davisontheinternet.com/play.html">Play</a>
