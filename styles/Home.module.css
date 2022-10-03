@@ -1,3 +1,15 @@
+.homepagetitle h1 {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  text-align: center;
+  color: #66ff8f;
+  font-size: 3rem;
+}
+.homepagetitle h1::selection {
+  color: #ffffff;
+  background-color: #8f66ff;
+}
+
 .title h1 {
   color: blueviolet;
   display: flex;
@@ -11,6 +23,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem;
+}
+
+.backtotop {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+.backtotop a {
+  color: #8f66ff;
+}
+.backtotop a:hover {
+  color: #8f66ff;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {

@@ -8,9 +8,11 @@
   color: #ffffff;
 }
 body {
-  margin: 0% 25%;
-  /* font-family: "Roboto", sans-serif; */
   background-color: #000000;
+}
+main {
+  width: 75%;
+  margin: 0% 12.5%;
 }
 nav {
   display: flex;

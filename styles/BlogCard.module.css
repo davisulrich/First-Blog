@@ -1,8 +1,8 @@
 .card {
   margin-top: 5rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 15px 20px 40px #855eb4;
+  box-shadow: 10px 10px 10px #ffffff;
 }
 .card h2 {
   padding: 0.5rem 0rem;

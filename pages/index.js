@@ -5,6 +5,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCard";
+import Link from "next/link";
 
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.hygraph.com/v2/cl851yvws0lv701t1hfyohgy5/master"
@@ -54,7 +55,9 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className={styles.homepagetitle}>
+        <h1>Davis's Blog</h1>
+      </div>
       <main className={styles.main}>
         {posts.map((post) => (
           <BlogCard
@@ -67,6 +70,9 @@ export default function Home({ posts }) {
           />
         ))}
       </main>
+      <div className={styles.backtotop}>
+        <a href="#">Back to the top (〜￣▽￣)〜</a>
+      </div>
     </div>
   );
 }
