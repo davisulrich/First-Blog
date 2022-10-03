@@ -1,5 +1,6 @@
-// npm run dev to start up
+// npm run dev --> to start up
 // https://www.youtube.com/watch?v=Dc7LAgqy1_E
+// write something here
 
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
