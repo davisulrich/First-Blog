@@ -56,6 +56,35 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <nav>
+        <div className={styles.logo}>
+          <a href="davisontheinternet.com" className={styles.logo}>
+            DAVIS // INTERNET
+          </a>
+        </div>
+        <ul className={styles.navlinks}>
+          <li>
+            <a href="davisontheinternet.com">Home</a>
+          </li>
+          <li>
+            <a href="davisontheinternet.com/about.html">About</a>
+          </li>
+          <li>
+            <a href="/">Blog</a>
+          </li>
+          <li>
+            <a href="davisontheinternet.com/play.html">Play</a>
+          </li>
+        </ul>
+        <div className={styles.burger}>
+          <div className={styles.burgerinner}>
+            <div className={styles.line1}></div>
+            <div className={styles.line2}></div>
+            <div className={styles.line3}></div>
+          </div>
+        </div>
+      </nav>
+      <hr color="#fffff" />
       <div className={styles.homepagetitle}>
         <h1>Blog by Davis</h1>
       </div>
