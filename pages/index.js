@@ -56,7 +56,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.homepagetitle}>
-        <h1>Davis's Blog</h1>
+        <h1>Blog by Davis</h1>
       </div>
       <main className={styles.main}>
         {posts.map((post) => (
