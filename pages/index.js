@@ -58,22 +58,22 @@ export default function Home({ posts }) {
       </Head>
       <nav>
         <div className={styles.logo}>
-          <a href="davisontheinternet.com" className={styles.logo}>
+          <a href="https://www.davisontheinternet.com" className={styles.logo}>
             DAVIS // INTERNET
           </a>
         </div>
         <ul className={styles.navlinks}>
           <li>
-            <a href="davisontheinternet.com">Home</a>
+            <a href="https://www.davisontheinternet.com">Home</a>
           </li>
           <li>
-            <a href="davisontheinternet.com/about.html">About</a>
+            <a href="https://www.davisontheinternet.com/about.html">About</a>
           </li>
           <li>
             <a href="#">Blog</a>
           </li>
           <li>
-            <a href="davisontheinternet.com/play.html">Play</a>
+            <a href="https://www.davisontheinternet.com/play.html">Play</a>
           </li>
         </ul>
         <div className={styles.burger}>
