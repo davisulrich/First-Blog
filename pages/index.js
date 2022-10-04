@@ -6,7 +6,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCard";
-import { DateTime } from "luxon";
+// import { DateTime } from "luxon";
 
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.hygraph.com/v2/cl851yvws0lv701t1hfyohgy5/master"
