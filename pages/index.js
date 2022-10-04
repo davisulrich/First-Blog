@@ -6,7 +6,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCard";
-// import { DateTime } from "luxon";
+// import { DateTime } from "Luxon";
 
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.hygraph.com/v2/cl851yvws0lv701t1hfyohgy5/master"
@@ -89,8 +89,8 @@ export default function Home({ posts }) {
         <h1>Blog by Davis</h1>
       </div>
       <main className={styles.main}>
-        {posts
-          .map((post) => (
+        {
+          posts.map((post) => (
             <BlogCard
               title={post.title}
               author={post.author}
@@ -100,19 +100,20 @@ export default function Home({ posts }) {
               slug={post.slug}
             />
           ))
-          .sort((a, b) => {
-            const beforeDate = DateTime.fromFormat(
-              // a.datePublished,
-              "07-01-2022",
-              "mm-dd-yyyy"
-            );
-            const afterDate = DateTime.fromFormat(
-              // b.datePublished,
-              "07-03-2022",
-              "mm-dd-yyyy"
-            );
-            return afterDate - beforeDate;
-          })}
+          // .sort((a, b) => {
+          //   const beforeDate = DateTime.fromFormat(
+          //     // a.datePublished,
+          //     "07-01-2022",
+          //     "mm-dd-yyyy"
+          //   );
+          //   const afterDate = DateTime.fromFormat(
+          //     // b.datePublished,
+          //     "07-03-2022",
+          //     "mm-dd-yyyy"
+          //   );
+          //   return afterDate - beforeDate;
+          // })
+        }
       </main>
       <div className={styles.backtotop}>
         <a href="#">Back to the top (〜￣▽￣)〜</a>
